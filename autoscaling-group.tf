@@ -27,7 +27,7 @@ resource "aws_autoscaling_group" "asg" {
   launch_configuration = aws_launch_configuration.launch_conf.name
   min_size             = 1
   max_size             = 10
-  desired_capacity     = 3
+  desired_capacity     = 4
   vpc_zone_identifier = ["subnet-0623c9d501ae9e744", "subnet-0e6e35303cf133db6"]
 
   lifecycle {
